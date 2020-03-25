@@ -1,0 +1,16 @@
+{
+    "name": "matheus/alura-scraping",
+    "description": "This library searches for courses from alura.com.br",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Matheus Oliveira da Silva",
+            "email": "matheus.oliveira.silv@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+	"symfony/dom-crawler": "^4.2",
+        "symfony/css-selector": "^5.0"
+    }
+}
