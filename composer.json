@@ -13,7 +13,10 @@
 	"symfony/dom-crawler": "^4.2",
         "symfony/css-selector": "^5.0"
     },
-    "autoload": {	
+    "autoload": {
+	"classmap": [
+	    "./Test.php"
+	],
         "psr-4": {
     	    "Alura\\CourseFinder\\": "src/"
         }
