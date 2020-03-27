@@ -15,6 +15,6 @@ $crawler = new Crawler();
 $seeker = new Seeker($client, $crawler);
 $courses = $seeker->search('/cursos-online-programacao/php');
 foreach ($courses as $course) {
-    echo $course . PHP_EOL;
+    showMessage($course);
 }
 
