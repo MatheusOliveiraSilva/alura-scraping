@@ -19,28 +19,28 @@ class Seeker
      */
     private $crawler;
 
-    public function __construct(ClientInterface $httpClient, Crawler $crawler) 
-    { 
+    public function __construct(ClientInterface $httpClient, Crawler $crawler)
+    {
         $this->httpClient = $httpClient;
-	$this->crawler = $crawler;
+        $this->crawler = $crawler;
     }
 
-    public function search(string $url): array 
+    public function search(string $url): array
     {
         $response = $this->httpClient->request('GET', $url);
 
         $html = $response->getBody();
 
         $this->crawler->addHtmlContent($html);
-
-	$elementCourses = $this->crawler->filter('span.card-curso__nome');
-       
+        
+        $elementCourses = $this->crawler->filter('span.card-curso__nome');
+        
         $courses = [];
 
-	foreach ($elementCourses as $element) {
-	    $courses[] = $element->textContent;
-	}
+        foreach ($elementCourses as $element) {
+            $courses[] = $element->textContent;
+        }
 
-	return $courses;
-    } 
+        return $courses;
+    }
 }
