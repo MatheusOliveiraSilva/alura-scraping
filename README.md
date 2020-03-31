@@ -10,7 +10,7 @@ After run the command below:
 ```php
 php search-courses.php
 ```
-##How to use in my project?
+## How to use in my project?
 Download via composer using:
 ```bash
 composer require matheusoliveira/alura-scraping
