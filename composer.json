@@ -14,7 +14,7 @@
         "symfony/css-selector": "^5.0"
     },
     "autoload": {
-	"file": ["./functions"],
+	"files": ["./functions"],
 	"classmap": [
 	    "./Test.php"
 	],
