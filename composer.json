@@ -46,5 +46,8 @@
  
      "scripts-descriptions": {
         "check": "Runs code verifications. PHAN, PHPCS and PHPUNIT"
-    }
+    },
+
+    "licence": "GPL-3.0",
+    "bin": ["search-courses.php"]
 }
