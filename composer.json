@@ -14,9 +14,9 @@
         "symfony/css-selector": "^5.0"
     },
     "autoload": {
-	"files": ["./functions"],
+	"files": ["functions.php"],
 	"classmap": [
-	    "./Test.php"
+	    "Test.php"
 	],
         "psr-4": {
     	    "Alura\\CourseFinder\\": "src/"
