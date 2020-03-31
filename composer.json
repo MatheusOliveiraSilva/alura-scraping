@@ -31,6 +31,20 @@
     "scripts": {
         "test": "phpunit tests\\TestCourseFinder.php",
 	"cs": "phpcs --standard=PSR12 src/",
-	"phan": "phan --allow-polyfill-parser"
+	"phan": "phan --allow-polyfill-parser",
+        "ls": "dir",
+	"delete-cache": "del cache",
+	"check": [
+	    "@phan",
+	    "@test",
+	    "@cs"
+	],
+	"post-update-cmd": [
+	    "@test"
+	]
+    }, 
+ 
+     "scripts-descriptions": {
+        "check": "Runs code verifications. PHAN, PHPCS and PHPUNIT"
     }
 }
