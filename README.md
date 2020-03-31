@@ -6,3 +6,15 @@ Download this repo and after run:
 ```bash
 composer install
 ```
+After run the command below:
+```php
+php search-courses.php
+```
+##How to use in my project?
+Download via composer using:
+```bash
+composer require matheusoliveira/alura-scraping
+```
+
+See more at: [https://packagist.org/packages/matheusoliveira/alura-scraping](https://packagist.org/packages/matheusoliveira/alura-scraping)
+
