@@ -1,5 +1,5 @@
 {
-    "name": "matheus/alura-scraping",
+    "name": "matheusoliveira/alura-scraping",
     "description": "This library searches for courses from alura.com.br",
     "type": "library",
     "authors": [
